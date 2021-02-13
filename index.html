@@ -7,14 +7,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Rota</title>
+    <title>Rota Generator</title>
   </head>
-  <body class="bg-light text-dark">
+  <body>
+      <div class="row text-center p-3">
+          <h2 class="col-8 font-weight-bold">Rota Generator</h2>
+          <div class="col-4 justify-content-end">
+                <button id="generate" class="btn btn-outline-danger mr-3">
+                    Generate new
+                </button>
+                <button id="export" class="btn btn-outline-secondary ml-3">
+                    Export
+                </button>
+          </div>
+    </div>
+      <hr>
       <div class="container-fluid">
           <div class="row">
             <div class="table-responsive table-striped col-md-8">
                 <table class="table">
-                    <h2 class="text-center">Current Rota</h2>
+                    <h3 class="text-center">Current Rota</h3>
                     <tr>
                         <th>Date</th>
                         <th>Host</th>
@@ -51,30 +63,25 @@
                         <td>New Mics</td>
                     </tr>
                 </table>
-                <div class="col text-center">
-                    <button id="generate" class="btn btn-lg btn-danger">
-                        Generate new rota
-                    </button>
-                    <hr>
-                </div>
+             
             </div>
                 <div class=" col-md-4">
-                    <div id="operators" class="text-center">
-                    <h2>New operator</h2>
-                    <input id="input" type="text" class="form-control input-sm" placeholder="Enter operator here...">
-                    <div class="btn">
-                        <button id="add" class="btn btn-info btn-lg">
-                            Add
-                        </button>
-                    </div>
-                    <hr>
-                    <h2>Operators</h2>
+                    <div id="operators" class="text-center p-3">
+                    <h3>Operators</h3>
                     <ul id="ul" class="list-group">
                         <li class="list-group-item">operator</li>
                         <li class="list-group-item">operator</li>
                         <li class="list-group-item">operator</li>
                         <li class="list-group-item">operator</li>
                     </ul>
+                    <hr>
+                    <h3>New operator</h3>
+                    <div class="input-group">
+                    <input id="operator-input" type="text" class="col-8 form-control input-sm" placeholder="New operator">
+                        <button id="add" class="col-4 btn btn-outline-success">
+                            Add
+                        </button>
+                    </div>
                 </div>
             </div>
            </div>
