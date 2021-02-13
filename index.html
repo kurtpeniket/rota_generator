@@ -16,7 +16,7 @@
                 <button id="generate" class="btn btn-outline-danger mr-3">
                     Generate new
                 </button>
-                <button id="export" class="btn btn-outline-secondary ml-3">
+                <button id="export" class="btn btn-outline-info ml-3">
                     Export
                 </button>
           </div>
@@ -25,55 +25,27 @@
       <div class="container-fluid">
           <div class="row">
             <div class="table-responsive table-striped col-md-8">
-                <table class="table">
+                <table id="table" class="table">
                     <h3 class="text-center">Current Rota</h3>
-                    <tr>
-                        <th>Date</th>
-                        <th>Host</th>
-                        <th>Co-Host</th>
-                        <th>Mics</th>
-                    </tr>
-                        <td>11/06/1990</td>
-                        <td>New Host</td>
-                        <td>New Co-host</td>
-                        <td>New Mics</td>
-                    </tr>
-                     </tr>
-                        <td>11/06/1990</td>
-                        <td>New Host</td>
-                        <td>New Co-host</td>
-                        <td>New Mics</td>
-                    </tr>
-                     </tr>
-                        <td>11/06/1990</td>
-                        <td>New Host</td>
-                        <td>New Co-host</td>
-                        <td>New Mics</td>
-                    </tr>
-                     </tr>
-                        <td>11/06/1990</td>
-                        <td>New Host</td>
-                        <td>New Co-host</td>
-                        <td>New Mics</td>
-                    </tr>
-                    </tr>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Host</th>
+                            <th>Co-Host</th>
+                            <th>Mics</th>
+                        </tr>
+                    </thead>
                         <td>11/06/1990</td>
                         <td>New Host</td>
                         <td>New Co-host</td>
                         <td>New Mics</td>
                     </tr>
                 </table>
-             
             </div>
                 <div class=" col-md-4">
                     <div id="operators" class="text-center p-3">
                     <h3>Operators</h3>
-                    <ul id="ul" class="list-group">
-                        <li class="list-group-item">operator</li>
-                        <li class="list-group-item">operator</li>
-                        <li class="list-group-item">operator</li>
-                        <li class="list-group-item">operator</li>
-                    </ul>
+                    <ul id="operator-ul" class="list-group"></ul>
                     <hr>
                     <h3>New operator</h3>
                     <div class="input-group">
@@ -89,6 +61,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="module" src="./lib/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
