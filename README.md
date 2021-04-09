@@ -1,0 +1,3 @@
+# rota_generator
+
+## An automatic rota generator that checks instances of it's own class for duplicates. Work in progress...
